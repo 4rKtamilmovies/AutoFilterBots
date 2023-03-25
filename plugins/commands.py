@@ -264,7 +264,7 @@ async def settings(client, message):
                     callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{grp_id}'
                 ),
                 InlineKeyboardButton(
-                    'One Hours' if settings["auto_delete"] else '❌ No',
+                    '5 minute' if settings["auto_delete"] else '❌ No',
                     callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{grp_id}'
                 )
             ],
